@@ -12,6 +12,7 @@ import { db } from "./firebase";
 import Navbar from "./Components/Navbar";
 import CreatePlaylist from "./Pages/CreatePlaylist";
 import MyPlaylist from "./Pages/MyPlaylist";
+import Sidebar from "./Components/Sidebar";
 
 function App() {
   const [Songs, setSongs] = useState([]);
@@ -37,6 +38,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <Sidebar />
       <Routes>
         <Route path="/playlists" element={<MyPlaylist />} />
         <Route path="/" element={<Home />} />

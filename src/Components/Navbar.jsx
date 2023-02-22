@@ -37,9 +37,7 @@ const Navbar = () => {
   };
   return (
     <div className="navbar">
-      <div className="logo">
-        <h1>SuchiFy</h1>
-      </div>
+      <div></div>
       {user ? (
         <>
           <button onClick={createPlaylist}> Create A playlist</button>

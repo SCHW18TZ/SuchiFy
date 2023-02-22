@@ -35,7 +35,6 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <h1>Home</h1>
       <div className="song-list">
         {Song.map((song) => (
           <div className="song" key={song.id}>

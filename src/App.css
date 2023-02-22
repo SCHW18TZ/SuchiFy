@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+
+body {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 .home {
   max-width: 1280px;
   margin: 0 auto;
@@ -51,4 +62,100 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+}
+
+.slidebar {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: blue;
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  position: absolute;
+  transition: all ease 0.5s;
+  left: 0;
+  top: 0;
+}
+
+.closed {
+  left: -17%;
+}
+
+.slidebar .brand {
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.slidebar .brand h1 {
+  margin-left: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.slidebar .brand .icon {
+  margin-right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.home-button,
+.search-button {
+  margin: 20px 0;
+}
+
+.home-button button,
+.search-button button {
+  background: white;
+  font-size: 20px;
+  color: #000;
+  border: none;
+  height: 50px;
+  width: 250px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+
+.home-button button:hover,
+.search-button button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.playlist-section h1 {
+  color: white;
+  font-weight: bold;
+  font-family: "Shantell Sans", cursive;
+}
+
+.playlist-section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.playlist-section div p {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: "Shantell Sans", cursive;
 }
